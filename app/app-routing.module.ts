@@ -1,14 +1,17 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { OwnoneComponent } from './ownone/ownone.component';
-import { PostComponent } from './crud/post/post.component';
-import { FetchComponent } from './crud/fetch/fetch.component';
-import { DeleteComponent } from './crud/delete/delete.component';
-import { UpdateComponent } from './crud/update/update.component';
-import { BindingComponent } from './binding/binding/binding.component';
+import { InvtransactionComponent } from './invtransaction/invtransaction.component';
+import { TransactComponent } from './transact/transact.component';
+import { AllinvestorComponent } from './allinvestor/allinvestor.component';
+import { AddinvestorComponent } from './addinvestor/addinvestor.component';
+import { DeleteInvestorComponent } from './delete-investor/delete-investor.component';
+
 const routes: Routes = [
-  {path: 'get-product',component:PostComponent},
-  {path: 'create-product',component:FetchComponent}
+  { path: 'allinvestordetails', component: AllinvestorComponent  },
+  { path: 'transaction/dotransaction', component: TransactComponent },
+  { path: 'transaction/History', component: InvtransactionComponent },
+  { path: 'addinvestors', component: AddinvestorComponent },
+  { path: 'deleteinvtor', component: DeleteInvestorComponent }
 ];
 
 @NgModule({

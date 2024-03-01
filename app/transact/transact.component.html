@@ -1,0 +1,16 @@
+<p>transact works!</p>
+
+<h3>Perform Transasction here !!!!!</h3>
+<form (ngSubmit)="onSubmit()">
+<div class="form-group">
+<label for="">investor id</label>
+<input type="text" class="form-control" id="investro"
+        [(ngModel)]="Transaction.transMakerID" name="investroname">
+<label for="">Amount Invested</label>
+<input type="number" class="form-control" id="amount"
+        [(ngModel)]="Transaction.transAmount" name="amount">
+
+
+</div>
+<button class="btn btn-success" type="submit"> Perform Transaction</button>
+</form>

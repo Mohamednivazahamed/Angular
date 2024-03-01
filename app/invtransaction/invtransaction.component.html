@@ -1,0 +1,21 @@
+<div>
+    <h2> All Transaction list</h2>
+    <table border = "2" style="padding: 10px;">
+    <thead>
+        <th>Transaction Id</th>
+        <th>Transacrion Amount </th>
+        <th>Investor Id</th>
+    
+        
+    </thead>
+    <tr *ngFor="let Inv of InvTransactions">
+    
+        <td>{{Inv.transId}}</td>
+        <td>{{Inv.transAmount}}</td>
+        <td>{{Inv.transMakerID}}</td>
+    </tr>
+    
+    
+    </table>
+
+ </div> 

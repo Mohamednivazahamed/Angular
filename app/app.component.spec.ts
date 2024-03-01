@@ -20,21 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it('should add 10 +10 giving 20', () => {
-
-    expect(10).toEqual(20);
-  });
-
-  it(`should have as title 'first-app'`, () => {
+  it(`should have as title 'Week4'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('first-app');
+    expect(app.title).toEqual('Week4');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, first-app');
+    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, Week4');
   });
 });

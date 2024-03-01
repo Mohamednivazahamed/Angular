@@ -3,36 +3,33 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { BindingComponent } from './binding/binding/binding.component';
-import { FormsModule, NgModel } from '@angular/forms';
-import { OwnoneComponent } from './ownone/ownone.component';
-import { HttpComponent } from './http/http.component';
-import { HttpClientModule } from '@angular/common/http';
-import { PostComponent } from './crud/post/post.component';
-import { UpdateComponent } from './crud/update/update.component';
-import { DeleteComponent } from './crud/delete/delete.component';
-import { FetchComponent } from './crud/fetch/fetch.component';
-import { FindbyIDComponent } from './crud/findby-id/findby-id.component';
 
+import { InvtransactionComponent } from './invtransaction/invtransaction.component';
+import { HeaderComponent } from './header/header.component';
+import { TransactComponent } from './transact/transact.component';
+import { FormsModule, NgModel } from '@angular/forms';
+import { AllinvestorComponent } from './allinvestor/allinvestor.component';
+import { HttpClientModule } from '@angular/common/http';
+import { AddinvestorComponent } from './addinvestor/addinvestor.component';
+import { DeleteInvestorComponent } from './delete-investor/delete-investor.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    BindingComponent,
-    OwnoneComponent,
-    HttpComponent,
-    PostComponent,
-    UpdateComponent,
-    DeleteComponent,
-    FetchComponent,
-    FindbyIDComponent,
-
+   
+    InvtransactionComponent,
+    HeaderComponent,
+    TransactComponent,
+    AllinvestorComponent,
+    AddinvestorComponent,
+    DeleteInvestorComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+   
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,20 @@
+<p>addinvestor works!</p>
+
+<h3>Create a Product</h3>
+<form (ngSubmit)="onSubmit()">
+<div class="form-group">
+<label for="">investor name</label>
+<input type="text" class="form-control" id="investro"
+        [(ngModel)]="investor.investorName" name="investroname">
+<label for="">Amount Invested</label>
+<input type="number" class="form-control" id="amount"
+        [(ngModel)]="investor.amountInvested" name="amount">
+
+<label for="">Available balence </label>
+<input type="number" class="form-control" id="balence"
+        [(ngModel)]="investor.avaialableBalance" name="balnce">
+</div>
+<button class="btn btn-success" type="submit"> submit</button>
+</form>
+
+

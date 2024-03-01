@@ -1,0 +1,22 @@
+
+<div>
+    <h2> All investor list</h2>
+    <table border = "2" style="padding: 10px;">
+    <thead>
+        <th>userID</th>
+        <th>Investor Name</th>
+        <th>Amount Invested</th>
+        <th>Available Balance</th>
+        
+    </thead>
+    <tr *ngFor="let Inv of Investors">
+        <td>{{Inv.investorId}}</td>
+        <td>{{Inv.investorName}}</td>
+        <td>{{Inv.amountInvested}}</td>
+        <td>{{Inv.avaialableBalance}}</td>
+    </tr>
+    
+    
+    </table>
+
+ </div>   
