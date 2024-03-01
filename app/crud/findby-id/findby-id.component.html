@@ -1,0 +1,11 @@
+<p>findby-id works!</p>
+<form (ngSubmit)="onSubmit()">
+    <div class="form-group">
+    <label for="">Product id</label>
+    <input #prodid ="ngModel" type="text" class="form-control" id="productid"
+    required minlength="1" maxlength="2"
+            [(ngModel)]="product.pid" name="productid">
+    </div>
+   <div *ngIf="prodid.touched && prodid.invalid" class="alert alert-danger">Invalid Customer ID</div>
+    <button class="btn btn-success" type="submit"> submit</button>
+    </form>
